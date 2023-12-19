@@ -47,7 +47,7 @@ function TodoList() {
   // under line "<Todo" is functions pass from Todo.js
   return (
     <div>
-      <h1>What's plan for today?</h1>
+      <h1>What's up for today 👋</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
