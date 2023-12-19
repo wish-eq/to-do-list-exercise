@@ -2,7 +2,7 @@
 - A responsive to-do-list web app with HTML, CSS and JavaScript
 
 # Desktop 13"
-![Desktop](https://github.com/wish-eq/to-do-list-exercise/assets/97574512/d2cc33b8-bcbc-4203-9db2-00d6b9a0ce0b)
+![Desktop]([https://github.com/wish-eq/to-do-list-exercise/assets/97574512/d2cc33b8-bcbc-4203-9db2-00d6b9a0ce0b](https://github.com/wish-eq/to-do-list-exercise/assets/97574512/9dfea8c8-5bda-4604-909a-b85f0a631be9))
 
 ## Updating to-do
 ![Edit](https://github.com/wish-eq/to-do-list-exercise/assets/97574512/66db56a7-2ca6-4144-8d6b-fb1aec3c2afb)
