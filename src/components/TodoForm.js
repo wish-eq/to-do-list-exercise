@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 
+// props = added a todo
 function TodoForm(props) {
-  const [input, setInput] = useState(props.edit ? props.edit.value : ""); // [input from user, function to set]
+  const [input, setInput] = useState(props.edit ? props.edit.value : ""); // [input from user, function to set] if editing, use editing one
 
   // to make website focus on typing when get in website
   const inputRef = useRef(null);
@@ -15,7 +16,7 @@ function TodoForm(props) {
   };
   // When Submiting
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // so web doesn't refresh
 
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),

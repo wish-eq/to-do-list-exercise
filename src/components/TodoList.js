@@ -3,7 +3,7 @@ import Todo from "./Todo";
 import TodoForm from "./TodoForm";
 
 function TodoList() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState([]); // list of todos
 
   const addTodo = (todo) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
