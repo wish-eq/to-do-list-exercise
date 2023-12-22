@@ -10,7 +10,7 @@ function TodoList() {
       // just to make form don't take "       " stuffs, don't worry
       return;
     }
-    const newTodos = [todo, ...todos];
+    const newTodos = [todo, ...todos]; // create new todo list that added new todo
 
     setTodos(newTodos);
     console.log(todo, ...todos);
