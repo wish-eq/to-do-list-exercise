@@ -7,7 +7,7 @@ function TodoList() {
 
   const addTodo = (todo) => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
-      // just to make form don't take "       " stuffs, don't worry
+      // just to make form don't take "      " stuffs, don't be worried
       return;
     }
     const newTodos = [todo, ...todos]; // create new todo list that added new todo
