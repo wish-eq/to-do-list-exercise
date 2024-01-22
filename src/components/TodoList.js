@@ -16,18 +16,19 @@ function TodoList() {
     console.log(todo, ...todos);
   };
 
-  // setEdit from icon
+  // setEdit after clikcing icon
   const updateTodo = (todoId, newValue) => {
     if (!newValue.text || /^\s*$/.test(newValue.text)) {
       // just to make form don't take "       " stuffs, don't worry
       return;
     }
+    // looking for item needed to be updated
     setTodos((prev) =>
       prev.map((item) => (item.id === todoId ? newValue : item))
     );
   };
 
-  // remove from icon
+  // remove after clikcing icon
   const removeTodo = (id) => {
     const removeArr = [...todos].filter((todo) => todo.id !== id);
 
@@ -44,7 +45,7 @@ function TodoList() {
     });
     setTodos(updatedTodos);
   };
-  // under line "<Todo" is functions pass from Todo.js
+  // under line "<Todo" is functions pass to Todo.js
   return (
     <div>
       <h1>What's up for today 👋</h1>

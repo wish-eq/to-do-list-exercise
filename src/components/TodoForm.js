@@ -18,6 +18,7 @@ function TodoForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault(); // so web doesn't refresh
 
+    // set id and text of a todo after sumbit
     props.onSubmit({
       id: Math.floor(Math.random() * 10000),
       text: input,

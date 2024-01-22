@@ -9,6 +9,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
     value: "",
   });
 
+  // submit after update the todo in TodoForm (editing version)
   const submitUpdate = (value) => {
     updateTodo(edit.id, value);
     setEdit({
@@ -17,10 +18,12 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
     });
   };
 
+  // if editing then show editing form
   if (edit.id) {
     return <TodoForm edit={edit} onSubmit={submitUpdate}></TodoForm>;
   }
 
+  // if not editing then show all the todo(s)
   return todos.map((todo, index) => (
     <div
       className={todo.isComplete ? "todo-row complete" : "todo-row"}
